@@ -49,9 +49,8 @@
                     </div>
                 </li>
             @endif
-
-
         </ul>
+        <div><h5>{{{ isset(Auth::user()->name) ? Auth::user()->name : Auth::user()->email }}}</h5></div>
     </header>
 
     <div class="app-body">

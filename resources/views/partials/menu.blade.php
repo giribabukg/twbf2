@@ -19,6 +19,7 @@
                         {{ trans('cruds.userManagement.title') }}
                     </a>
                     <ul class="nav-dropdown-items">
+                        @can('permission_access')
                         <li class="nav-item">
                             <a href="{{ route("admin.permissions.index") }}" class="nav-link {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}">
                                 <i class="fa-fw fas fa-unlock-alt nav-icon">
@@ -27,6 +28,8 @@
                                 {{ trans('cruds.permission.title') }}
                             </a>
                         </li>
+                        @endcan
+                        @can('role_access')
                         <li class="nav-item">
                             <a href="{{ route("admin.roles.index") }}" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
                                 <i class="fa-fw fas fa-briefcase nav-icon">
@@ -35,6 +38,8 @@
                                 {{ trans('cruds.role.title') }}
                             </a>
                         </li>
+                        @endcan
+                        @can('user_access')
                         <li class="nav-item">
                             <a href="{{ route("admin.users.index") }}" class="nav-link {{ request()->is('admin/users') || request()->is('admin/users/*') ? 'active' : '' }}">
                                 <i class="fa-fw fas fa-user nav-icon">
@@ -43,6 +48,7 @@
                                 {{ trans('cruds.user.title') }}
                             </a>
                         </li>
+                        @endcan
                     </ul>
                 </li>
             @endcan
