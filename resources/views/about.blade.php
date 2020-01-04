@@ -1,37 +1,32 @@
 @extends('layouts.frontend')
 
 @section('content')
-    <div class="page-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1>About Us</h1>
-                </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </div><!-- .page-header -->
-
     <div class="welcome-wrap">
-        <div class="container">
+        <div class="container" style="margin-top:10px">
             <div class="row">
                 <div class="col-12 col-lg-6 order-2 order-lg-1">
                     <div class="welcome-content">
                         <header class="entry-header">
-                            <h2 class="entry-title">Wellcome to our Charity</h2>
+                            <h2 class="entry-title" style="color:#000;">Welcome to our TWBF</h2>
                         </header><!-- .entry-header -->
 
-                        <div class="entry-content mt-5">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris quis aliquam. Integer accumsan sodales odio, id tempus velit ullamcorper id. Quisque at erat eu libero consequat tempus. Quisque molestie convallis tempus. Ut semper purus metus, a euismod sapien sodales ac. Duis viverra eleifend fermentum.</p>
+                        <div class="entry-content" style="color:#000;font-family:'Mukta Malar', sans-serif;font-size:16px;">
+                        <!-- <div class="entry-content" style="color:#000;font-family:'Arima Madurai', sans-serif;font-size:15px;"> -->
+                        <!-- <div class="entry-content" style="color:#000;font-family:'Pavanam', sans-serif;font-size:15px;"> -->
+                        <!-- <div class="entry-content" style="color:#000;font-family:'Catamaran', sans-serif;font-size:15px;"> -->
+                            <p>கல்யாணராமனின் நமஸ்காரங்கள்.</p>
+                            <p>நமது குழுமம்மானது தி வேல்டு ப்ராம்மின் பவுண்டேஷன் என்கிற பெயரோடு பதிவு செய்யப்பட்டுள்ளது.</p>
+                            <p>இதில் இதுவரை நமது வாழ்வாதாரத்திற்கு தேவையாணவைகளைமட்டுமே அதிகப்படியாக செய்து வந்தோம். ஆனால் இனிமேல் இதோடு மட்டுமல்லாமல் மருத்துவ முகாம், கல்வி உதவித்தொகை, நமது ஏழை பிராமண பெண் குழந்தைகளின் திருமண வைபவங்கள் ...</p>
                         </div><!-- .entry-content -->
 
                         <div class="entry-footer mt-5">
-                            <a href="#" class="btn gradient-bg mr-2">Read More</a>
+                            <a href="{{ url('/about_full') }}" class="btn gradient-bg mr-2">Read More</a>
                         </div><!-- .entry-footer -->
                     </div><!-- .welcome-content -->
                 </div><!-- .col -->
 
                 <div class="col-12 col-lg-6 order-1 order-lg-2">
-                    <img src="{{ asset('vendor/thecharity/images/welcome.jpg') }}" alt="welcome">
+                    <img src="{{ asset('vendor/thecharity/images/twbf_logo2.jpeg') }}" style="width:438px;height:394px;margin-right: auto;margin-left:auto;display:block" alt="welcome">
                 </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->
@@ -89,13 +84,13 @@
                 <div class="col-12 col-md-6 col-lg-5">
                     <div class="testimonial-cont">
                         <div class="entry-content">
-                            <p>We love to help all the children that have problems in the world. After 15 years we have many goals achieved.</p>
+                            <p>We love to help all people tat have problems in the world. After 15 years we have many goals achieved.</p>
                         </div>
 
                         <div class="entry-footer d-flex flex-wrap align-items-center mt-5">
-                            <img src="{{ asset('vendor/thecharity/images/testimonial-1.jpg') }}" alt="">
+                            <img src="{{ asset('vendor/thecharity/images/kalayanaraman.jpg') }}" alt="">
 
-                            <h4>Maria Williams, <span>Volunteer</span></h4>
+                            <h4>R. கல்யாணராமன், <span>Founder & Chairman</span></h4>
                         </div>
                     </div>
                 </div>
@@ -103,11 +98,11 @@
                 <div class="col-12 col-md-6 offset-lg-2 col-lg-5">
                     <div class="testimonial-cont">
                         <div class="entry-content">
-                            <p>We love to help all the children that have problems in the world. After 15 years we have many goals achieved.</p>
+                            <p>We help all who is suffereing from health issues in the world.<br/><br/></p>
                         </div>
 
                         <div class="entry-footer d-flex flex-wrap align-items-center mt-5">
-                            <img src="{{ asset('vendor/thecharity/images/testimonial-2.jpg') }}" alt="">
+                            <img src="{{ asset('vendor/thecharity/images/vishwanath.jpg') }}" alt="">
 
                             <h4>Cristian James, <span>Volunteer</span></h4>
                         </div>

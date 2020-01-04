@@ -13,6 +13,8 @@ Route::view('/causes', 'causes');
 Route::view('/gallery', 'portfolio');
 Route::view('/news', 'news');
 Route::view('/contact', 'contact');
+Route::view('/about_full', 'about_full');
+Route::view('/donation', 'donation');
 
 Auth::routes(['register' => false]);
 

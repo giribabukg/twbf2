@@ -29,9 +29,53 @@
    
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet" />
     @yield('styles')
+    <link href="https://fonts.googleapis.com/css?family=Hind+Madurai&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kavivanar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Malar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pavanam&display=swap" rel="stylesheet"> 
 </head>
+@switch(Request::path())
+    @case('/')
+        @php
+            $lPgCls = ''; 
+        @endphp
+    @break
+    @case('about' || 'about_full')
+        @php
+            $lPgCls = 'about-page'; 
+        @endphp
+    @break
+    @case('causes')
+        @php
+            $lPgCls = 'causes-page'; 
+        @endphp
+    @break
+    @case('causes')
+        @php
+            $lPgCls = 'causes-page'; 
+        @endphp
+    @break
+    @case('gallery')
+        @php
+            $lPgCls = 'portfolio'; 
+        @endphp
+    @break
+    @case('news')
+        @php
+            $lPgCls = 'news-page'; 
+        @endphp
+    @break
+    @default
+        @php
+            $lPgCls = '';
+        @endphp
+@endswitch
 
-<body>
+<body class="single-page {{ $lPgCls }}">
     <header class="site-header">
         <div class="nav-bar">
             <div class="container">
@@ -40,17 +84,19 @@
                         <div class="site-branding d-flex align-items-center">
                            <!-- <a class="d-block" href="{{ url('/') }}" rel="home"><img class="d-block" src="{{ asset('vendor/thecharity/images/logo.png') }}" alt="logo"></a> -->
                            <!-- <a class="d-block" href="{{ url('/') }}" rel="home"><div style="color:#000;font-size:32px;font-weight: bold;text-decoration: none;">TWBF</div></a> -->
-                           <a class="d-block" href="{{ url('/') }}" rel="home"><h2 style="color:#000;font-weight: bold;">TWBF</h2></a>
+                           <!-- <a class="d-block" href="{{ url('/') }}" rel="home"><h2 style="color:#000;font-weight: bold;">TWBF</h2></a> -->
+                           <a class="d-block" href="{{ url('/') }}" rel="home"><img src="vendor/thecharity/images/site_logo.png"/></a>
                         </div><!-- .site-branding -->
 
                         <nav class="site-navigation d-flex justify-content-end align-items-center">
                             <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
-                                <li class="current-menu-item"><a href="{{ url('/') }}">Home</a></li>
-                                <li><a href="{{ url('/about') }}">About Us</a></li>
-                                <li><a href="{{ url('/causes') }}">Causes</a></li>
-                                <li><a href="{{ url('/gallery') }}">Gallery</a></li>
-                                <li><a href="{{ url('/news') }}">News</a></li>
-                                <li><a href="{{ url('/contact') }}">Contact</a></li>
+                                <li class="{{ Request::is('/') ? 'current-menu-item' : '' }}"><a href="{{ url('/') }}">Home</a></li>
+                                <li class="{{ Request::is('about') ? 'current-menu-item' : '' }}"><a href="{{ url('/about') }}">About Us</a></li>
+                                <li class="{{ Request::is('causes') ? 'current-menu-item' : '' }}"><a href="{{ url('/causes') }}">Mission</a></li>
+                                <!-- <li class="{{ Request::is('services') ? 'current-menu-item' : '' }}"><a href="{{ url('/services') }}">Services</a></li> -->
+                                <li class="{{ Request::is('gallery') ? 'current-menu-item' : '' }}"><a href="{{ url('/gallery') }}">Gallery</a></li>
+                                <li class="{{ Request::is('news') ? 'current-menu-item' : '' }}"><a href="{{ url('/news') }}">News</a></li>
+                                <li class="{{ Request::is('contact') ? 'current-menu-item' : '' }}"><a href="{{ url('/contact') }}">Contact</a></li>
                             </ul>
                         </nav><!-- .site-navigation -->
 
@@ -77,16 +123,16 @@
                             <!-- <h2><a class="foot-logo" href="#"><img src="{{ asset('vendor/thecharity/images/foot-logo.png') }}" alt=""></a></h2> -->
                             <h3 style="color:#fff;font-weight: bold;">TWBF</h3>
 
-                            <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Mauris temp us vestib ulum mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.Lorem ipsum dolo.</p>
+                            <p style="font-family:'Mukta Malar', sans-serif;font-size:16px;">நமது 37 மாவட்டங்களிலும் நிர்வாகிகளை தேர்ந்தெடுக்கக் கூடிய காலகட்டத்தில் இருப்பதால் எங்களுடன் கைகோர்த்துக்கொண்டு பணியாற்றுவதற்கு உறுப்பினர்கள் தேவை .</p>
 
                             <ul class="d-flex flex-wrap align-items-center">
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <!-- <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li> -->
+                                <li><a href="https://www.facebook.com/groups/2880342715524794/" target="_blank"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+<!--                                 <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                                 <li><a href="#"><i class="fa fa-behance"></i></a></li>
                                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
+ -->                            </ul>
                         </div><!-- .foot-about -->
                     </div><!-- .col -->
 
@@ -94,13 +140,11 @@
                         <h2>Useful Links</h2>
 
                         <ul>
-                            <li><a href="#">Privacy Polticy</a></li>
-                            <li><a href="#">Become  a Volunteer</a></li>
-                            <li><a href="#">Donate</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Causes</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">News</a></li>
+                            <li><a href="{{ url('/about') }}">About Us</a></li>
+                            <li><a href="{{ url('/donation') }}">Donate</a></li>
+                            <li><a href="{{ url('/causes') }}">Missions</a></li>
+                            <li><a href="{{ url('/gallery') }}">Gallery</a></li>
+                            <li><a href="{{ url('/news') }}">News</a></li>
                         </ul>
                     </div><!-- .col -->
 
@@ -111,17 +155,17 @@
                             <ul>
                                 <li>
                                     <h3><a href="#">A new cause to help</a></h3>
-                                    <div class="posted-date">MArch 12, 2018</div>
+                                    <div class="posted-date">Jan 03, 2020</div>
                                 </li>
 
                                 <li>
                                     <h3><a href="#">We love to help people</a></h3>
-                                    <div class="posted-date">MArch 12, 2018</div>
+                                    <div class="posted-date">Jan 03, 2020</div>
                                 </li>
 
                                 <li>
                                     <h3><a href="#">The new ideas for helping</a></h3>
-                                    <div class="posted-date">MArch 12, 2018</div>
+                                    <div class="posted-date">Jan 03, 2020</div>
                                 </li>
                             </ul>
                         </div><!-- .foot-latest-news -->
@@ -132,18 +176,11 @@
                             <h2>Contact</h2>
 
                             <ul>
-                                <li><i class="fa fa-phone"></i><span>+45 677 8993000 223</span></li>
-                                <li><i class="fa fa-envelope"></i><span>office@template.com</span></li>
-                                <li><i class="fa fa-map-marker"></i><span>Main Str. no 45-46, b3, 56832, Los Angeles, CA</span></li>
+                                <li><i class="fa fa-phone"></i><span>+044 1234 5678</span></li>
+                                <li><i class="fa fa-envelope"></i><span>twbf.in@gmail.com</span></li>
+                                <li><i class="fa fa-map-marker"></i><span>Gummidipundi, Tiruvallur District, Tamil Nadu</span></li>
                             </ul>
                         </div><!-- .foot-contact -->
-
-                        <div class="subscribe-form">
-                            <form class="d-flex flex-wrap align-items-center">
-                                <input type="email" placeholder="Your email">
-                                <input type="submit" value="send">
-                            </form><!-- .flex -->
-                        </div><!-- .search-widget -->
                     </div><!-- .col -->
                 </div><!-- .row -->
             </div><!-- .container -->
@@ -154,7 +191,7 @@
                 <div class="row">
                     <div class="col-12">
                         <p class="m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Powered by <a href="http://www.dikshainfotech.in" target="_blank">Diksha Infotech</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Powered by <a href="http://www.dikshainfotech.in" target="_blank" style="color:#7b7b7b;">Diksha Infotech</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     </div><!-- .col-12 -->
                 </div><!-- .row -->

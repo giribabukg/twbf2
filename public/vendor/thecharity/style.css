@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+/*@import url(//fonts.googleapis.com/earlyaccess/notosanstamil.css);*/
+
+/*@font-face {
+  font-family: 'Sindhu';
+  src: url('fonts/Sindhu.ttf');
+}*/
+
+/*@font-face {
+  font-family: 'Noto Sans Tamil Regular', sans-serif;
+  src: url(fonts/NotoSansTamil-Regular.ttf);
+}*/
+
 
 body {
     color: #262626;
@@ -278,7 +290,8 @@ a:hover, a:active {
 .hero-content-overlay h4 {
     margin: 0;
     font-size: 46px;
-    font-weight: 600;
+    font-weight: 800;
+    width:775px;
 }
 
 .hero-content-overlay p {
@@ -779,7 +792,7 @@ ul.tabs-nav .tab-nav.active {
     color: #fff;
 }
 
-.welcome-content .entry-title::before {
+/*.welcome-content .entry-title::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -788,7 +801,7 @@ ul.tabs-nav .tab-nav.active {
     height: 4px;
     border-radius: 2px;
     background: #ff5a00;
-}
+}*/
 
 .welcome-content .entry-content {
     font-size: 14px;
@@ -821,7 +834,7 @@ ul.tabs-nav .tab-nav.active {
     font-weight: 600;
 }
 
-.section-heading  .entry-title::before {
+/*.section-heading  .entry-title::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -830,7 +843,7 @@ ul.tabs-nav .tab-nav.active {
     height: 4px;
     border-radius: 2px;
     background: #ff5a00;
-}
+}*/
 
 @media screen and (max-width: 992px) {
     .home-page-events .featured-cause .section-heading {
@@ -911,9 +924,9 @@ ul.tabs-nav .tab-nav.active {
     padding: 96px 0;
 }
 
-.cause-wrap {
+/*.cause-wrap {
     margin-top: 50px;
-}
+}*/
 
 .featured-cause .cause-wrap {
     padding: 40px 24px;
@@ -970,7 +983,7 @@ ul.tabs-nav .tab-nav.active {
     margin-top: 28px;
     margin-bottom: 0;
     font-size: 14px;
-    color: #929191;
+    /*color: #929191;*/
 }
 
 .cause-wrap .fund-raised {
@@ -1162,7 +1175,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .about-page .welcome-wrap {
-    padding: 96px 0;
+    padding: 25px 0;
 }
 
 .about-page .welcome-content .entry-title {
@@ -1292,7 +1305,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .causes-page .featured-cause {
- padding: 96px 0;
+ padding: 25px 0;
 }
 
 .causes-page .our-causes {
@@ -1528,7 +1541,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .portfolio-wrap {
-    padding: 96px 0;
+    padding: 0;
 }
 
 .portfolio-wrap .mt-48 {
@@ -1581,7 +1594,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .news-wrap {
-    padding: 96px 0;
+    padding: 25px 0;
 }
 
 .news-content {
@@ -1724,7 +1737,7 @@ ul.tabs-nav .tab-nav.active {
 # Popular Posts
 --------------------------------*/
 .popular-posts {
-    margin-top: 60px;
+    margin-top: 0px;
 }
 
 .popular-posts ul {
@@ -1882,11 +1895,11 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .contact-page-wrap {
-    padding: 0 0 96px;
+    padding: 0 0 25px;
 }
 
 .contact-page-wrap .entry-content {
-    margin-top: 96px;
+    margin-top: 25px;
 }
 
 .contact-page-wrap .entry-content h2 {
@@ -1897,7 +1910,7 @@ ul.tabs-nav .tab-nav.active {
 .contact-page-wrap .entry-content p {
     margin-top: 20px;
     font-size: 14px;
-    color: #929191;
+    /*color: #929191;*/
 }
 
 .contact-page-wrap .entry-content ul.contact-social {
@@ -1925,7 +1938,7 @@ ul.tabs-nav .tab-nav.active {
     align-items: baseline;
     margin-bottom: 15px;
     font-size: 14px;
-    color: #9b9a9a;
+    /*color: #9b9a9a;*/
 }
 
 .contact-page-wrap .entry-content ul.contact-info .fa {
@@ -1938,7 +1951,7 @@ ul.tabs-nav .tab-nav.active {
 
 .contact-form {
     padding: 35px 20px 55px;
-    margin-top: 96px;
+    margin-top: 25px;
     background: #edf3f5;
 }
 
@@ -2130,4 +2143,32 @@ ul.tabs-nav .tab-nav.active {
     color: #7b7b7b;
     background: #131212;
     text-align: center;
+}
+
+
+.board_mem {
+    font-size: 25px;
+    font-weight: 600;
+    color: #262626;
+    font-family: font-family:'Mukta Malar', sans-serif;
+    text-align: center;
+}
+
+.fnt-muk-f16 {
+    font-family: font-family:'Mukta Malar', sans-serif;
+    font-size: 16px;
+}
+
+.trustee-mobico {
+    width: 10px;
+    margin-right: 10px;
+    font-size: 28px;
+    color:#ff5a00;
+    text-align: center;    
+}
+
+.trustee-mobno {
+    display:inline-block;
+    vertical-align:middle;
+    height:35px;
 }
