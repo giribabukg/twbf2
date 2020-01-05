@@ -26,7 +26,7 @@
                 </div><!-- .col -->
 
                 <div class="col-12 col-lg-6 order-1 order-lg-2">
-                    <img src="{{ asset('vendor/thecharity/images/twbf_logo2.jpeg') }}" style="width:438px;height:394px;margin-right: auto;margin-left:auto;display:block" alt="welcome">
+                    <img src="{{ asset('vendor/thecharity/images/twbf_logo2.jpeg') }}" style="width:80%;margin-right: auto;margin-left:auto;display:block" alt="welcome">
                 </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->
