@@ -192,17 +192,45 @@
                 <div class="col-12 col-lg-6">
                     <div class="upcoming-events">
                         <div class="section-heading">
-                            <h2 class="entry-title">Upcoming Events</h2>
+                            <h2 class="entry-title">Events</h2>
                         </div><!-- .section-heading -->
 
                         <div class="event-wrap d-flex flex-wrap justify-content-between">
                             <figure class="m-0">
-                                <img src="{{ asset('vendor/thecharity/images/event-1.jpg') }}" alt="">
+                                <img src="{{ asset('vendor/thecharity/images/event-1.png') }}" alt="">
                             </figure>
 
                             <div class="event-content-wrap">
                                 <header class="entry-header d-flex flex-wrap align-items-center">
-                                    <h3 class="entry-title w-100 m-0"><a href="#">Fundraiser for Kids</a></h3>
+                                    <h3 class="entry-title w-100 m-0"><a href="#">Tiruvallur Meet</a></h3>
+
+                                    <div class="posted-date">
+                                        <a href="#">Jul 14, 2019 </a>
+                                    </div><!-- .posted-date -->
+
+                                    <div class="cats-links">
+                                        <a href="#">Ball Room New York</a>
+                                    </div><!-- .cats-links -->
+                                </header><!-- .entry-header -->
+
+                                <div class="entry-content">
+                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                </div><!-- .entry-content -->
+
+                                <div class="entry-footer">
+                                    <a href="#">Read More</a>
+                                </div><!-- .entry-footer -->
+                            </div><!-- .event-content-wrap -->
+                        </div><!-- .event-wrap -->
+
+                        <div class="event-wrap d-flex flex-wrap justify-content-between">
+                            <figure class="m-0">
+                                <img src="{{ asset('vendor/thecharity/images/event-2.png') }}" alt="">
+                            </figure>
+
+                            <div class="event-content-wrap">
+                                <header class="entry-header d-flex flex-wrap align-items-center">
+                                    <h3 class="entry-title w-100 m-0"><a href="#">TWBF Born Day</a></h3>
 
                                     <div class="posted-date">
                                         <a href="#">Aug 25, 2018 </a>
@@ -225,43 +253,15 @@
 
                         <div class="event-wrap d-flex flex-wrap justify-content-between">
                             <figure class="m-0">
-                                <img src="{{ asset('vendor/thecharity/images/event-2.jpg') }}" alt="">
+                                <img src="{{ asset('vendor/thecharity/images/event-3.png') }}" alt="">
                             </figure>
 
                             <div class="event-content-wrap">
                                 <header class="entry-header d-flex flex-wrap align-items-center">
-                                    <h3 class="entry-title w-100 m-0"><a href="#">Bring water to the childrens</a></h3>
+                                    <h3 class="entry-title w-100 m-0"><a href="#">Sakthi Samrat</a></h3>
 
                                     <div class="posted-date">
-                                        <a href="#">Aug 25, 2018 </a>
-                                    </div><!-- .posted-date -->
-
-                                    <div class="cats-links">
-                                        <a href="#">Ball Room New York</a>
-                                    </div><!-- .cats-links -->
-                                </header><!-- .entry-header -->
-
-                                <div class="entry-content">
-                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                                </div><!-- .entry-content -->
-
-                                <div class="entry-footer">
-                                    <a href="#">Read More</a>
-                                </div><!-- .entry-footer -->
-                            </div><!-- .event-content-wrap -->
-                        </div><!-- .event-wrap -->
-
-                        <div class="event-wrap d-flex flex-wrap justify-content-between">
-                            <figure class="m-0">
-                                <img src="{{ asset('vendor/thecharity/images/event-3.jpg') }}" alt="">
-                            </figure>
-
-                            <div class="event-content-wrap">
-                                <header class="entry-header d-flex flex-wrap align-items-center">
-                                    <h3 class="entry-title w-100 m-0"><a href="#">Bring water to the childrens</a></h3>
-
-                                    <div class="posted-date">
-                                        <a href="#">Aug 25, 2018 </a>
+                                        <a href="#">Apr 16, 2018 </a>
                                     </div><!-- .posted-date -->
 
                                     <div class="cats-links">
