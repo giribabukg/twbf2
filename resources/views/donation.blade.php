@@ -30,11 +30,12 @@
                         <h3 class="entry-title">Bank Details</h3>
                         <p>
                             <div>
-                                <div><span>Bank Name: </span></div>
-                                <div><span>Branch: </span></div>
-                                <div><span>Account Number: </span></div>
-                                <div><span>Account Type: </span></div>
-                                <div><span>IFSC Code: </span></div>
+                                <div><span><b>Name</b>: The World Brahmin Foundation</span></div>
+                                <div><span><b>Bank Name</b>: City Union Bank</span></div>
+                                <div><span><b>Branch</b>: Valasaravakkam</span></div>
+                                <div><span><b>Account Number</b>: 510909010133872</span></div>
+                                <div><span><b>Account Type</b>: Current Account</span></div>
+                                <div><span><b>IFSC Code</b>: CIUB0000218</span></div>
                             </div>
                         </p>
                     </div>
@@ -52,7 +53,7 @@
                     <div class="short-content">
                         <h3 class="entry-title">Cheque</h3>
 
-                        <p>Favour of "The World Brahmin Foundation".</p>
+                        <p style="color:#000;font-size:16px;">Draft your checque favour of <b>"The World Brahmin Foundation"</b>.</p>
                     </div>
                 </div>
             </div>

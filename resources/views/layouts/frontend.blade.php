@@ -176,7 +176,7 @@
                             <h2>Contact</h2>
 
                             <ul>
-                                <li><i class="fa fa-phone"></i><span>+044 1234 5678</span></li>
+                                <li><i class="fa fa-phone"></i><span>+91 99440 55334</span></li>
                                 <li><i class="fa fa-envelope"></i><span>twbf.in@gmail.com</span></li>
                                 <li><i class="fa fa-map-marker"></i><span>Gummidipundi, Tiruvallur District, Tamil Nadu</span></li>
                             </ul>

@@ -3,8 +3,8 @@
 @section('content')
     <div class="swiper-container hero-slider">
         <div class="swiper-wrapper">
-            <div class="swiper-slide hero-content-wrap">
-                <img src="{{ asset('vendor/thecharity/images/hero.jpg') }}" alt="">
+            <div class="swiper-slide hero-content-wrap" style="background-color: #4394FF;">
+                <img src="{{ asset('vendor/thecharity/images/twbf_logo_1.jpg') }}" alt="" style="width:63%;margin-left:auto;margin-right:auto;">
 
                 <div class="hero-content-overlay position-absolute w-100 h-100">
                     <div class="container h-100">

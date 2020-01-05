@@ -16,7 +16,7 @@
                         <!-- <div class="entry-content" style="color:#000;font-family:'Catamaran', sans-serif;font-size:15px;"> -->
                             <p>கல்யாணராமனின் நமஸ்காரங்கள்.</p>
                             <p>நமது குழுமம்மானது தி வேல்டு ப்ராம்மின் பவுண்டேஷன் என்கிற பெயரோடு பதிவு செய்யப்பட்டுள்ளது.</p>
-                            <p>இதில் இதுவரை நமது வாழ்வாதாரத்திற்கு தேவையாணவைகளைமட்டுமே அதிகப்படியாக செய்து வந்தோம். ஆனால் இனிமேல் இதோடு மட்டுமல்லாமல் மருத்துவ முகாம், கல்வி உதவித்தொகை, நமது ஏழை பிராமண பெண் குழந்தைகளின் திருமண வைபவங்கள் ...</p>
+                            <p>இதில் இதுவரை நமது வாழ்வாதாரத்திற்கு தேவையாணவைகளை மட்டுமே அதிகப்படியாக செய்து வந்தோம். ஆனால் இனிமேல் இதோடு மட்டுமல்லாமல் மருத்துவ முகாம், கல்வி உதவித்தொகை, நமது ஏழை பிராமண பெண் குழந்தைகளின் திருமண வைபவங்கள் ...</p>
                         </div><!-- .entry-content -->
 
                         <div class="entry-footer mt-5">
@@ -84,7 +84,7 @@
                 <div class="col-12 col-md-6 col-lg-5">
                     <div class="testimonial-cont">
                         <div class="entry-content">
-                            <p>We love to help all people tat have problems in the world. After 15 years we have many goals achieved.</p>
+                            <p>We love to help all people that have problems in the world. After 15 years we have many goals achieved.</p>
                         </div>
 
                         <div class="entry-footer d-flex flex-wrap align-items-center mt-5">
@@ -104,7 +104,7 @@
                         <div class="entry-footer d-flex flex-wrap align-items-center mt-5">
                             <img src="{{ asset('vendor/thecharity/images/vishwanath.jpg') }}" alt="">
 
-                            <h4>Cristian James, <span>Volunteer</span></h4>
+                            <h4>V. S. விஸ்வநாத சிவாச்சார்யர், <span>Senior Advisor</span></h4>
                         </div>
                     </div>
                 </div>
@@ -118,7 +118,7 @@
                 <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
                     <h2>Help us so we can help others</h2>
 
-                    <a class="btn orange-border" href="#">Donate now</a>
+                    <a class="btn orange-border" href="{{ url('/donation') }}">Donate now</a>
                 </div>
             </div>
         </div>
