@@ -13,6 +13,7 @@ Route::view('/causes', 'causes');
 Route::view('/gallery', 'portfolio');
 Route::view('/news', 'news');
 Route::view('/contact', 'contact');
+Route::post('/contactemail', 'ContactController@contactemail')->name('fronthome');
 Route::view('/about_full', 'about_full');
 Route::view('/donation', 'donation');
 

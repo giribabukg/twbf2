@@ -28,10 +28,11 @@
                 </div><!-- .col -->
 
                 <div class="col-12 col-lg-7">
-                    <form class="contact-form">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
-                        <textarea rows="15" cols="6" placeholder="Messages"></textarea>
+                    <form class="contact-form" method="post" action="{{ url('/contactemail') }}">
+                        {{ csrf_field() }}
+                        <input type="text" placeholder="Name" name="name">
+                        <input type="email" placeholder="Email" name="email">
+                        <textarea rows="15" cols="6" placeholder="Messages" name="message"></textarea>
 
                         <span>
                             <input class="btn gradient-bg" type="submit" value="Contact us">
